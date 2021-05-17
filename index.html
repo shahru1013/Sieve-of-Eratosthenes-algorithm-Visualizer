@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sieve of Eratosthenes Visualizer</title>
+   
+</head>
+<body>
+   <div class="main-body">
+       <div class="content-sec">
+           <div class="left-sec">
+            <h1 style="text-align: center; margin-top: 30px; color: crimson;">Sieve of Eratosthenes Visualizer</h1>
+             <div class="content">
+                <h3>Prime Numbers Up To</h3>
+                
+                <div class="inp">
+                    <input type="text" placeholder="Up To" id="val">
+                    <select>
+                        <option value="100">Medium</option>
+                        <option value="50">Fast</option>
+                        <option value="300">Slow</option>
+                        <option>Animation Speed</option>
+                    </select>
+                </div>
+                <button onclick="startClicked()">Start</button>
+                <button onclick="restart()">ReStart</button>
+             </div>
+           </div>
+           <div class="right-sec">
+               <div class="result" id="result">
+                   <h3 style="color: crimson;" id="r-txt"></h3>
+                   <div class="res-box" id="res-box"></div>
+               </div>
+               <div class="main-board" id="m-board">
+                 <div class="box" id="a">
+                     
+                 </div>
+               </div>
+               <div id="snackbar">Some text some message..</div>
+           </div>
+       </div>
+   </div>
+    
+</body>
+<script type='text/javascript' src="index.js"></script>
+</html>
